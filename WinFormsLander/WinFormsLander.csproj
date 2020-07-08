@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D07A0D4-4D88-41F8-A9F8-621FF169615E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinFormsLander</RootNamespace>
+    <AssemblyName>WinFormsLander</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>LanderType03.ico</ApplicationIcon>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <PublishUrl>http://localhost/WinFormsLander/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Globals.cs" />
+    <Compile Include="Classes\KeyBoard.cs" />
+    <Compile Include="Classes\SoundEffect.cs" />
+    <Compile Include="Forms\FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\GameFunctions.cs" />
+    <Compile Include="Functions\LanderFunctions.cs" />
+    <Compile Include="Classes\ShipSprite.cs" />
+    <Compile Include="Classes\Sprite.cs" />
+    <Compile Include="Functions\StageFunctions.cs" />
+    <Compile Include="Forms\FormChooseArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChooseArea.Designer.cs">
+      <DependentUpon>FormChooseArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClear.Designer.cs">
+      <DependentUpon>FormClear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Enum.cs" />
+    <Compile Include="Forms\FormConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConsole.Designer.cs">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormChooseShip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChooseShip.Designer.cs">
+      <DependentUpon>FormChooseShip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormStageBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStageBase.Designer.cs">
+      <DependentUpon>FormStageBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\Functions.cs" />
+    <Compile Include="Forms\FormChooseStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChooseStage.Designer.cs">
+      <DependentUpon>FormChooseStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaClasses\MediaException.cs" />
+    <Compile Include="MediaClasses\MediaFile.cs" />
+    <Compile Include="MediaClasses\SoundFile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormChooseArea.resx">
+      <DependentUpon>FormChooseArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClear.resx">
+      <DependentUpon>FormClear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormConsole.resx">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormChooseShip.resx">
+      <DependentUpon>FormChooseShip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormStageBase.resx">
+      <DependentUpon>FormStageBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormChooseStage.resx">
+      <DependentUpon>FormChooseStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Boosters\AuxRocketBoost.PNG" />
+    <None Include="Resources\Images\Boosters\LeftBoost.PNG" />
+    <None Include="Resources\Images\Boosters\RightBoost.PNG" />
+    <None Include="Resources\Images\Boosters\RocketBoost.png" />
+    <None Include="Resources\Images\Boosters\UpBoost.PNG" />
+    <None Include="Resources\Images\Landers\LanderType01.png" />
+    <None Include="Resources\Images\Landers\LanderType01Crash.png" />
+    <None Include="Resources\Images\Landers\LanderType02.png" />
+    <None Include="Resources\Images\Landers\LanderType02Crash.png" />
+    <None Include="Resources\Images\Landers\LanderType03.png" />
+    <None Include="Resources\Images\Landers\LanderType03Crash.png" />
+    <None Include="Resources\Images\Landers\LanderType04.png" />
+    <None Include="Resources\Images\Landers\LanderType04Crash.png" />
+    <None Include="Resources\Images\Landers\LanderType05.png" />
+    <None Include="Resources\Images\Landers\LanderType05_Left.png" />
+    <None Include="Resources\Images\Landers\LanderType05_Right.png" />
+    <None Include="Resources\Images\Landers\LanderType05Crash.png" />
+    <None Include="Resources\Images\Landers\LanderType06.png" />
+    <None Include="Resources\Images\Landers\LanderType06Crash.png" />
+    <None Include="Resources\Images\Landers\LanderType07.png" />
+    <None Include="Resources\Images\Landers\LanderType07Crash.png" />
+    <None Include="Resources\Images\Landers\LanderType08.png" />
+    <None Include="Resources\Images\Landers\LanderType08Crash.png" />
+    <None Include="Resources\Images\Landers\LanderType09.png" />
+    <None Include="Resources\Images\Landers\LanderType09Crash.png" />
+    <None Include="Resources\Images\Landers\LanderTypeX1.png" />
+    <None Include="Resources\Images\Landers\LanderTypeX1Crash.png" />
+    <None Include="Resources\Images\Landscapes\Landscape_Mars.jpg" />
+    <None Include="Resources\Images\Landscapes\Landscape_Moon.jpg" />
+    <None Include="Resources\Images\Locations\Location_Asteroid.png" />
+    <None Include="Resources\Images\Locations\Location_Earth.png" />
+    <None Include="Resources\Images\Locations\Location_Mars.png" />
+    <None Include="Resources\Images\Locations\Location_Moon.png" />
+    <None Include="Resources\Images\Locations\Location_Venus.png" />
+    <None Include="Resources\Images\Menu\Locked.PNG" />
+    <None Include="Resources\Images\Menu\LunarLander.jpg" />
+    <None Include="Resources\Images\Misc\ball1.PNG" />
+    <None Include="Resources\Images\Misc\blackSquare.PNG" />
+    <None Include="Resources\Images\Misc\explosion.PNG" />
+    <None Include="Resources\Images\Misc\LED_OFF.png" />
+    <None Include="Resources\Images\Misc\LED_ON.png" />
+    <None Include="Resources\Images\Misc\LZ.PNG" />
+    <None Include="Resources\Images\Misc\Off_Map_Cursor.PNG" />
+    <None Include="Resources\Images\Misc\Parachute.png" />
+    <None Include="Resources\Images\Locations\Location_Mercury.png" />
+    <None Include="Resources\Images\Locations\Location_Io.png" />
+    <None Include="Resources\Images\Locations\Location_Amalthea.png" />
+    <None Include="Resources\Images\Locations\Location_Callisto.png" />
+    <None Include="Resources\Images\Locations\Location_Europa.png" />
+    <None Include="Resources\Images\Locations\Location_Ganymede.png" />
+    <None Include="Resources\Images\Locations\Area1_Neiborhood\Location_Earth.png" />
+    <None Include="Resources\Images\Locations\Area1_Neiborhood\Location_Mars.png" />
+    <None Include="Resources\Images\Locations\Area1_Neiborhood\Location_Mercury.png" />
+    <None Include="Resources\Images\Locations\Area1_Neiborhood\Location_Moon.png" />
+    <None Include="Resources\Images\Locations\Area1_Neiborhood\Location_Venus.png" />
+    <None Include="Resources\Images\Locations\Area2_JupiterMoons\Location_Amalthea.png" />
+    <None Include="Resources\Images\Locations\Area2_JupiterMoons\Location_Callisto.png" />
+    <None Include="Resources\Images\Locations\Area2_JupiterMoons\Location_Europa.png" />
+    <None Include="Resources\Images\Locations\Area2_JupiterMoons\Location_Ganymede.png" />
+    <None Include="Resources\Images\Locations\Area2_JupiterMoons\Location_Io.png" />
+    <None Include="Resources\Images\Locations\Area3_OtherMoons\Location_Iapetus.png" />
+    <None Include="Resources\Images\Locations\Area3_OtherMoons\Location_Miranda.png" />
+    <None Include="Resources\Images\Locations\Area3_OtherMoons\Location_Titan.png" />
+    <None Include="Resources\Images\Locations\Area3_OtherMoons\Location_Titania.png" />
+    <None Include="Resources\Images\Locations\Area3_OtherMoons\Location_Triton.png" />
+    <None Include="Resources\Images\Locations\Area4_DwarfPlanets\Location_Ceres.png" />
+    <None Include="Resources\Images\Locations\Area4_DwarfPlanets\Location_Eris.png" />
+    <None Include="Resources\Images\Locations\Area4_DwarfPlanets\Location_Haumea.png" />
+    <None Include="Resources\Images\Locations\Area4_DwarfPlanets\Location_Pluto.png" />
+    <None Include="Resources\Images\Locations\Area4_DwarfPlanets\Location_Sedna.png" />
+    <None Include="Resources\Images\Locations\Area5_Asteroids\Location_4Vesta.png" />
+    <None Include="Resources\Images\Locations\Area5_Asteroids\Location_Hygiea.png" />
+    <None Include="Resources\Images\Locations\Area5_Asteroids\Location_Ida.png" />
+    <None Include="Resources\Images\Locations\Area5_Asteroids\Location_Pallas.png" />
+    <None Include="Resources\Images\Locations\Area5_Asteroids\Location_Varuna.png" />
+    <None Include="Resources\Images\Locations\Area5_Asteroids\Location_Vesta.png" />
+    <None Include="Resources\Images\Locations\Area6_MetroidUniverse\Location_Aether.png" />
+    <None Include="Resources\Images\Locations\Area6_MetroidUniverse\Location_BiologicSpaceLab.png" />
+    <None Include="Resources\Images\Locations\Area6_MetroidUniverse\Location_DarkAether.png" />
+    <None Include="Resources\Images\Locations\Area6_MetroidUniverse\Location_SR388.png" />
+    <None Include="Resources\Images\Locations\Area6_MetroidUniverse\Location_TallonIV.png" />
+    <None Include="Resources\Images\Locations\Area6_MetroidUniverse\Location_Zebes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Areas\Area1_Neiborhood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Areas\Area2_JupiterMoons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Areas\Area4_DwarfPlanets_Typed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Areas\Area5_AsteroidsTyped.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Areas\Area6_MetroidUniverse_Typed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Areas\Area1_Neiborhood_Typed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Areas\Area2_JupiterMoons_Typed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Areas\Area3_OtherMoons_Typed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Menu\Area_Locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Misc\Asteroid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Misc\Red_Ore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Misc\Green_Ore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Misc\Blue_Ore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Misc\OreCollected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\Images\Misc\Metroid.png" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LanderType03.ico" />
+    <Content Include="Resources\Music\crateria_surface.mid" />
+    <Content Include="Resources\Music\intro.mp3" />
+    <Content Include="Resources\Music\Metroid2.mid" />
+    <Content Include="Resources\Music\metroidbegin.mid" />
+    <Content Include="Resources\Music\Met_II.mid" />
+    <Content Include="Resources\Sounds\collected.wav" />
+    <Content Include="Resources\Sounds\crash.wav" />
+    <Content Include="Resources\Sounds\explosion.wav" />
+    <Content Include="Resources\Sounds\float.wav" />
+    <Content Include="Resources\Sounds\game_explosion.wav" />
+    <Content Include="Resources\Sounds\game_float.wav" />
+    <Content Include="Resources\Sounds\game_rocket.wav" />
+    <Content Include="Resources\Sounds\game_selected.wav" />
+    <Content Include="Resources\Sounds\game_special.wav" />
+    <Content Include="Resources\Sounds\landing.wav" />
+    <Content Include="Resources\Sounds\rocket.wav" />
+    <Content Include="Resources\Sounds\selected.wav" />
+    <Content Include="Resources\Sounds\special.wav" />
+    <Content Include="Resources\Sounds\unlocked.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>mkdir $(ProjectDir)bin\debug\Sounds
+mkdir $(ProjectDir)bin\debug\Music
+mkdir $(ProjectDir)bin\release\Sounds
+mkdir $(ProjectDir)bin\release\Music
+
+del $(ProjectDir)bin\debug\Sounds\*.wav
+del $(ProjectDir)bin\debug\Music\*.wav
+del $(ProjectDir)bin\release\Sounds\*.wav
+del $(ProjectDir)bin\release\Music\*.wav
+
+del $(ProjectDir)bin\debug\Sounds\*.mp3
+del $(ProjectDir)bin\debug\Music\*.mp3
+del $(ProjectDir)bin\release\Sounds\*.mp3
+del $(ProjectDir)bin\release\Music\*.mp3
+
+copy $(ProjectDir)Resources\Sounds\*.wav $(ProjectDir)bin\debug\Sounds\
+copy $(ProjectDir)Resources\Music\*.wav $(ProjectDir)bin\debug\Music\
+copy $(ProjectDir)Resources\Sounds\*.wav $(ProjectDir)bin\Release\Sounds\
+copy $(ProjectDir)Resources\Music\*.wav $(ProjectDir)bin\Release\Music\
+
+copy $(ProjectDir)Resources\Sounds\*.mp3 $(ProjectDir)bin\debug\Sounds\
+copy $(ProjectDir)Resources\Music\*.mp3 $(ProjectDir)bin\debug\Music\
+copy $(ProjectDir)Resources\Sounds\*.mp3 $(ProjectDir)bin\Release\Sounds\
+copy $(ProjectDir)Resources\Music\*.mp3 $(ProjectDir)bin\Release\Music\</PreBuildEvent>
+  </PropertyGroup>
+</Project>
